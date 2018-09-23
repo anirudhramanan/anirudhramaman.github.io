@@ -61,10 +61,10 @@ html {
   text-align: center;
   padding: 2rem 1rem;
   color: rgba(255,255,255,.5); 
-  background: -webkit-linear-gradient(#666fae, #555fa6);
-  background: -o-linear-gradient(#666fae, #555fa6);
-  background: -moz-linear-gradient(#666fae, #555fa6);
-  background: linear-gradient(#666fae, #555fa6);
+  background: -webkit-linear-gradient(#1976d2, #1e88e5);
+  background: -o-linear-gradient(#1976d2, #1e88e5);
+  background: -moz-linear-gradient(#1976d2, #1e88e5);
+  background: linear-gradient(#0d47a1, #1565c0);
 }
 @media (min-width: 48em) {
   .sidebar {
@@ -365,7 +365,7 @@ a.sidebar-nav-item:focus {
 }
 
 .post-overlay-header-title {
-  background-color: rgba(0, 0, 0, 0.35);
+  background-color: rgba(0, 0, 0, 0.623);
   position: absolute;
   bottom: 0;
   padding: 1rem 1rem 0 1rem;

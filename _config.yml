@@ -8,15 +8,14 @@ permalink:        pretty
 # Setup
 title:            Anirudh Ramanan
 description:      'I work as a Mobile Developer at Flipkart. This is my personal blog and any views expressed here are solely mine.'
-url:              http://iamanirudh.com
+url:              http://anirudhramanan.com
 baseurl:          /
 logo:             /content/images/me.jpg
 
 author:
   name:           'Anirudh Ramanan'
-  url:            https://plus.google.com/107972823913344955047
 
-paginate:         5
+paginate:         8
 
 disqus_shortname: anirudh
 
