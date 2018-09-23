@@ -157,6 +157,6 @@ One of the reasons for low accuracy is overfitting. This happens when the model 
 
 ### References
 
-https://www.tensorflow.org/hub/
-https://www.tensorflow.org/hub/tutorials/image_retraining
-https://arxiv.org/abs/1512.00567
+[https://www.tensorflow.org/hub/](https://www.tensorflow.org/hub/)
+[https://www.tensorflow.org/hub/tutorials/image_retraining](https://www.tensorflow.org/hub/tutorials/image_retraining)
+[https://arxiv.org/abs/1512.00567](https://arxiv.org/abs/1512.00567)
