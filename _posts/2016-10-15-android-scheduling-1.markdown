@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Choosing the right Scheduler API - Part 1
+title: Choosing the right Scheduler API
 date: '2016-10-15'
 cover_image: '/content/images/2016/schedule.jpg'
 ---
@@ -105,7 +105,7 @@ This uses the Google Play Services to help schedule and batch jobs across the sy
                     .setPersisted(true)
                     .build();
 
-GcmNetworkManager.getInstance(this).schedule(oneofftask);
+  GcmNetworkManager.getInstance(this).schedule(oneofftask);
   {% endhighlight %}
 
 * <b>PeriodicTask</b> : Task that is executed at the specified interval, without needing to be rescheduled.
@@ -121,13 +121,11 @@ GcmNetworkManager.getInstance(this).schedule(oneofftask);
                     .setPersisted(true)
                     .build();
 
-GcmNetworkManager.getInstance(this).schedule(periodictask);
+  GcmNetworkManager.getInstance(this).schedule(periodictask);
   {% endhighlight %}
 
 GcmNetworkManager, and JobScheduler fits the use case when the job has to be repeated or one-off, while keeping battery life in mind. If some kind of precision is required in the timing, AlarmManager should be used. 
 
 Eg : An alarm app should use AlarmManager, instead of GcmNetworkManager, or JobScheduler.
-
-In the next post, we will discuss the usage of AlarmManager, and how it is different from GcmNetworkManager, or JobScheduler. 
 
 For any queries, please email me at anirudhramanan23@gmail.com. Thank you.

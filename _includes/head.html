@@ -8,17 +8,15 @@
 
   <title>
     {% if page.title == "Home" %}
-      {{ site.title }}
+    {{ site.title }}
     {% else %}
-      {{ page.title }} &middot; {{ site.title }}
+    {{ page.title }} &middot; {{ site.title }}
     {% endif %}
   </title>
-  
-  
-  
+
   <meta name="twitter:site" content="{{ site.twitter }}">
   <meta property="og:type" content="article">
-  
+
   {% if page.cover_image %}
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image:src" content="{{ site.url }}{{ page.cover_image }}">
@@ -26,7 +24,7 @@
   {% else %}
   <meta name="twitter:card" content="summary">
   {% endif %}
-  
+
   {% if page.title == "Home" %}
   <meta property="og:title" content="{{ site.title }}">
   <meta property="twitter:title" content="{{ site.title }}">
@@ -52,17 +50,13 @@
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Karla|Roboto+Mono|Raleway:700">
 
   <!-- Icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/content/icons/apple-touch-icon-144x144.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/content/icons/apple-touch-icon-152x152.png" />
-  <link rel="icon" type="image/png" href="/content/icons/favicon-196x196.png" sizes="196x196" />
   <link rel="icon" type="image/png" href="/content/icons/favicon-32x32.png" sizes="32x32" />
-  <link rel="icon" type="image/png" href="/content/icons/favicon-16x16.png" sizes="16x16" />
-  <link rel="SHORTCUT ICON" href="/content/icons/favicon1.ico" />
-  <meta name="application-name" content="Anirudh Ramanan"/>
+  <link rel="SHORTCUT ICON" href="/content/icons/favicon.ico" />
+  <meta name="application-name" content="Anirudh Ramanan" />
   <meta name="msapplication-TileColor" content="#00796B" />
   <meta name="msapplication-TileImage" content="/content/icons/mstile-144x144.png" />
 
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
-  
+
 </head>

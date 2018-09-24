@@ -11,7 +11,7 @@ Why Flatbuffers? Why not use some standard libraries such as GSON, or jackson. I
 
 Here's the sample json which was used for the test
 
-````
+{% highlight groovy %}
 {
   "event": [
     {
@@ -29,11 +29,11 @@ Here's the sample json which was used for the test
     ...
     ...
 }
-````
+{% endhighlight %}
 
 And, here's the flat buffer schema for the same.
 
-````
+{% highlight groovy %}
 table EventList {
     event : [Event];
 }
@@ -46,27 +46,27 @@ table Event {
 }
 
 root_type EventList;
-````
+{% endhighlight %}
 
 Using the flatc compiler, I generated the java classes for the same. You can find the instructions on how to use the compiler in the github repo [README](https://github.com/anirudhramanan/flatbuffers-android-demo) file.
 
 Here are some metrics which I measuread using both :
 
-* ###Loading Time
+* <b>Loading Time</b>
 
 With gson, it took around 30 - 40 ms to parse the entire json file, whereas with flatbuffers it took 3 - 4 ms for the same. Reason being the data is stored in byte buffer format in the flatbuffer file, so there is no need for parsing or unpacking the file, thus resulting in lesser time accessing the data.
 
 ![Comparison](/content/images/2016/flatbuff/comparison.png)
 
-* ###Memory Allocation
+* <b>Memory Allocation</b>
 
 With flatbuffers, since only the buffer uses memory, there were lesser GC calls as compared to Gson (where a lot of small objects are created which needs GC calls to free up memory). As a result the CPU cycle calls were also less. Hence, using flatbuffers proved to be much memory efficient as compared to Gson.
 
-## More articles on Flatbuffers
+### More articles on Flatbuffers
 
 * Facebook : A nice read on how flatbuffers helped them speed up loading their posts. [Link](https://code.facebook.com/posts/872547912839369/improving-facebook-s-performance-on-android-with-flatbuffers/)
 
-## Sample Project
+### Sample Project
 
 You can head over to the Github [project](https://github.com/anirudhramanan/flatbuffers-android-demo) for more information. 
 

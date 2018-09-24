@@ -6,16 +6,16 @@ highlighter:      pygments
 permalink:        pretty
 
 # Setup
-title:            Anirudh Ramanan
-description:      'I work as a Mobile Developer at Flipkart. This is my personal blog and any views expressed here are solely mine.'
-url:              http://anirudhramanan.com
+title:            Anirudh
+description:      'I work as a software developer at Flipkart. This is my personal blog, any views expressed here are solely mine.'
+url:              https://anirudhramanan.com
 baseurl:          /
 logo:             /content/images/me.jpg
 
 author:
   name:           'Anirudh Ramanan'
 
-paginate:         8
+paginate:         10
 
 disqus_shortname: anirudh
 
