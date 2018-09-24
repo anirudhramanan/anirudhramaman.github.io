@@ -4,6 +4,7 @@ title: Android Strict Mode
 date: '2016-04-02'
 cover_image: '/content/images/2016/strictmode.jpg'
 ---
+
 Not many of you may heard about Strict Mode in Android. Added in Api Level 9, it is a developer tool which detects those part of codes that may crash due to some voilations, and brings them to your attention with a error code that is easy to understand.
 
 It can be used to catch various types of errors/voilations which has been discussed below:
@@ -54,4 +55,3 @@ public void onCreate() {
 
 
 Easy Right? Enable strict mode in your Application class, and make sure the developers, including you (obviously :P) write and validate codes so that it prevents [ANR dialogs](http://developer.android.com/training/articles/perf-anr.html) from being shown to users.
-

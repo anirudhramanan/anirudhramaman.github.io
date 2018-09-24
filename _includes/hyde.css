@@ -70,7 +70,7 @@ html {
   .sidebar {
     display: block;
     position: fixed;
-    width: 30%;
+    width: 25%;
     height: 100%;
     display: table;
   }
@@ -80,7 +80,7 @@ html {
   .sidebar {
     display: block;
     position: fixed;
-    width: 25%;
+    width: 20%;
     height: 100%;
     display: table;
   }
@@ -90,7 +90,7 @@ html {
   .sidebar {
     display: block;
     position: fixed;
-    width: 20rem;
+    width: 17rem;
     height: 100%;
     display: table;
   }
@@ -171,7 +171,7 @@ a.sidebar-nav-item:focus {
 
 @media (min-width: 80em) {
   .content {
-    margin-left: 22rem;
+    margin-left: 18rem;
   }
 }
 
@@ -284,6 +284,7 @@ a.sidebar-nav-item:focus {
 
 .lead {
   font-size: 0.9rem;
+  color: #dfdfdf
 }
   
 .icon:before {
@@ -327,7 +328,7 @@ a.sidebar-nav-item:focus {
   border-radius: 50%;
   font-weight: bold;
   text-shadow: none;
-  color: #BBB;
+  color: #fff;
   -webkit-font-smoothing: antialiased; }
   .navigation__item a:hover {
     color: #FFF;
