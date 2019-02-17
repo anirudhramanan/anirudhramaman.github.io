@@ -30,7 +30,7 @@
  * Update the foundational and global aspects of the page.
  */
 
-html {
+ html {
   font-family: "Karla", Roboto, Helvetica, Arial, sans-serif;
 }
 @media (min-width: 48em) {
@@ -60,13 +60,14 @@ html {
 .sidebar {
   text-align: center;
   padding: 2rem 1rem;
-  color: rgba(255,255,255,.5); 
-  background: -webkit-linear-gradient(#1976d2, #1e88e5);
-  background: -o-linear-gradient(#1976d2, #1e88e5);
-  background: -moz-linear-gradient(#1976d2, #1e88e5);
-  background: linear-gradient(#0d47a1, #1565c0);
+  color: rgba(255,255,255,.5);
+  background: -webkit-linear-gradient(#37474f, #263238);
+  background: -o-linear-gradient(#37474f, #263238);
+  background: -moz-linear-gradient(#37474f, #263238);
+  background: linear-gradient(#37474f, #263238);
 }
-@media (min-width: 48em) {
+
+@media (min-width: 64em) {
   .sidebar {
     display: block;
     position: fixed;
@@ -76,21 +77,11 @@ html {
   }
 }
 
-@media (min-width: 64em) {
-  .sidebar {
-    display: block;
-    position: fixed;
-    width: 20%;
-    height: 100%;
-    display: table;
-  }
-}
-
 @media (min-width: 80em) {
   .sidebar {
     display: block;
     position: fixed;
-    width: 17rem;
+    width: 20rem;
     height: 100%;
     display: table;
   }
@@ -153,25 +144,22 @@ a.sidebar-nav-item:focus {
  */
 
 .content {
+  max-width: 44rem;
   padding-top:    4rem;
   padding-bottom: 4rem;
-}
-
-@media (min-width: 48em) {
-  .content {
-    margin-left: 30%;
-  }
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (min-width: 64em) {
-  .content {
+  .container {
     margin-left: 25%;
   }
 }
 
 @media (min-width: 80em) {
-  .content {
-    margin-left: 18rem;
+  .container {
+    margin-left: 20rem;
   }
 }
 
@@ -284,9 +272,8 @@ a.sidebar-nav-item:focus {
 
 .lead {
   font-size: 0.9rem;
-  color: #dfdfdf
 }
-  
+
 .icon:before {
   font-family: "foundation-icons";
   font-style: normal;
@@ -304,7 +291,7 @@ a.sidebar-nav-item:focus {
   margin: 0;
   padding: 0;
   list-style-type: none; }
-  
+
 .sidebar-social {
   margin-bottom: 1rem; }
   .sidebar-social a {
@@ -315,12 +302,12 @@ a.sidebar-nav-item:focus {
     .sidebar-social a .icon {
       display: block;
       font-size: 1.34em; }
-  
+
 .social-item {
   display: inline-block;
   margin: 1px;
- }  
-      
+ }
+
 .social-item a {
   display: block;
   position: relative;
@@ -328,7 +315,7 @@ a.sidebar-nav-item:focus {
   border-radius: 50%;
   font-weight: bold;
   text-shadow: none;
-  color: #fff;
+  color: #BBB;
   -webkit-font-smoothing: antialiased; }
   .navigation__item a:hover {
     color: #FFF;
@@ -339,7 +326,7 @@ a.sidebar-nav-item:focus {
   border-radius: 50%;
   border: 3px solid #FFF;
   box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3); }
-  
+
 .post-comments {
   border-top: 1px solid #dddddd;
   padding: 60px 0; }
@@ -366,7 +353,7 @@ a.sidebar-nav-item:focus {
 }
 
 .post-overlay-header-title {
-  background-color: rgba(0, 0, 0, 0.623);
+  background-color: rgba(0, 0, 0, 0.35);
   position: absolute;
   bottom: 0;
   padding: 1rem 1rem 0 1rem;
@@ -385,7 +372,7 @@ a.sidebar-nav-item:focus {
 .twitter a:hover {
   color: #64B5F6;
   border-color: #64B5F6; }
-  
+
 .gplus a:hover {
   color: #E57373;
   border-color: #E57373; }
@@ -393,15 +380,19 @@ a.sidebar-nav-item:focus {
 .github a:hover {
   color: #90A4AE;
   border-color: #90A4AE; }
-  
+
 .stackoverflow a:hover {
   color: #FFD54F;
   border-color: #FFD54F; }
-  
+
+.foursquare a:hover {
+  color: #7986CB;
+  border-color: #7986CB; }
+
 .linkedin a:hover {
   color: #64B5F6;
-  border-color: #64B5F6; }    
+  border-color: #64B5F6; }
 
 .mail a:hover {
   color: #4DB6AC;
-  border-color: #4DB6AC; }  
+  border-color: #4DB6AC; }
