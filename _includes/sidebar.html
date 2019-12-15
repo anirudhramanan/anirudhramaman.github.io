@@ -1,20 +1,29 @@
 <div class="sidebar">
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
-
-      <a href="{{ site.baseurl }}" title="Link to homepage for {{ site.title }}"><img src="{{ site.logo }}" width="80"
-          alt="{{ site.title }} logo" class="panel-cover__logo logo" /></a>
-
+      <p>
+      <div>
+        <img src="{{ site.logo }}" width="80"
+             alt="{{ site.title }} logo" class="panel-cover__logo logo img" />
       <h1>
-        <a href="{{ site.baseurl }}">
-          {{ site.title }}
-        </a>
+        {{ site.title }}
       </h1>
-      <p class="lead">{{ site.description }}</p>
+      </div>
+      {% if page.url == site.baseurl %}
+      <div>
+        <span class="lead">{{ site.description }}</span>
+      </div>
+      <div>
+        <span class="lead">{{ site.description1 }}</span>
+      </div>
+      {% endif %}
+      </p>
     </div>
 
     <nav class="sidebar-nav">
+      {% if page.url != site.baseurl %}
       <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
+      {% endif %}
 
       {% comment %}
       The code below dynamically generates a sidebar nav of pages with
@@ -29,6 +38,7 @@
       {% endif %}{% endif %}
       {% endfor %}
     </nav>
+    {% if page.url == site.baseurl %}
     <nav class="sidebar-social">
       <ul class="navigation">
 
@@ -56,8 +66,8 @@
             <span class="label">LinkedIn</span>
           </a>
         </li>
-
       </ul>
     </nav>
+    {% endif %}
   </div>
 </div>

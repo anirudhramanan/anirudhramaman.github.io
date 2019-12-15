@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Using transfer learning to train an image classifier
-date: '2019-02-16'
+date: '2019-12-14'
 cover_image: '/content/images/2018/transferlearning/main.jpeg'
 ---
 

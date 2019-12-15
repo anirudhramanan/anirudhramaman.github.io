@@ -59,7 +59,7 @@
 
 .sidebar {
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
   color: rgba(255,255,255,.5);
   background: -webkit-linear-gradient(#37474f, #263238);
   background: -o-linear-gradient(#37474f, #263238);
@@ -70,9 +70,9 @@
 @media (min-width: 64em) {
   .sidebar {
     display: block;
-    position: fixed;
-    width: 25%;
-    height: 100%;
+    position: relative;
+    width: 100%;
+    height: 20%;
     display: table;
   }
 }
@@ -80,9 +80,9 @@
 @media (min-width: 80em) {
   .sidebar {
     display: block;
-    position: fixed;
-    width: 20rem;
-    height: 100%;
+    position: relative;
+    width: 100%;
+        height: 20%;
     display: table;
   }
 }
@@ -144,23 +144,11 @@ a.sidebar-nav-item:focus {
  */
 
 .content {
-  max-width: 44rem;
+  max-width: 70%;
   padding-top:    4rem;
   padding-bottom: 4rem;
   margin-left: auto;
   margin-right: auto;
-}
-
-@media (min-width: 64em) {
-  .container {
-    margin-left: 25%;
-  }
-}
-
-@media (min-width: 80em) {
-  .container {
-    margin-left: 20rem;
-  }
 }
 
 /*
@@ -396,3 +384,7 @@ a.sidebar-nav-item:focus {
 .mail a:hover {
   color: #4DB6AC;
   border-color: #4DB6AC; }
+
+.img {
+    float: none;
+  }
