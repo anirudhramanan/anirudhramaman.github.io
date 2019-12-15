@@ -6,11 +6,10 @@
         <img src="{{ site.logo }}" width="80"
              alt="{{ site.title }} logo" class="panel-cover__logo logo img" />
       <h1>
-        {{ page.url }}
-        {{ site.baseurl }}
+        {{ site.title }}
       </h1>
       </div>
-      {% if page.url == site.baseurl %}
+      {% if page.url == "/" %}
       <div>
         <span class="lead">{{ site.description }}</span>
       </div>
@@ -22,7 +21,7 @@
     </div>
 
     <nav class="sidebar-nav">
-      {% if page.url != site.baseurl %}
+      {% if page.url != "/" %}
       <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
       {% endif %}
 
@@ -39,7 +38,7 @@
       {% endif %}{% endif %}
       {% endfor %}
     </nav>
-    {% if page.url == site.baseurl %}
+    {% if page.url == "/" %}
     <nav class="sidebar-social">
       <ul class="navigation">
 
