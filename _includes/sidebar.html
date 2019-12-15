@@ -6,7 +6,8 @@
         <img src="{{ site.logo }}" width="80"
              alt="{{ site.title }} logo" class="panel-cover__logo logo img" />
       <h1>
-        {{  page.url }}
+        {{ page.url }}
+        {{ site.baseurl }}
       </h1>
       </div>
       {% if page.url == site.baseurl %}
