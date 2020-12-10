@@ -7,11 +7,10 @@ permalink:        pretty
 
 # Setup
 title:            Anirudh
-description:      'I work as a Software Developer at Flipkart.'
-description1:      'This is my personal blog, any views expressed here are solely mine.'
+description:      'I work as a Software Developer at Flipkart. This is my personal blog and any views expressed here are solely mine.'
 url:              https://www.anirudh.xyz
 baseurl:          /
-logo:             /content/images/me.jpg
+logo:             /content/icons/icon.jpg
 
 author:
   name:           'Anirudh Ramanan'
@@ -26,8 +25,6 @@ github:
 gems:
   - jekyll-sitemap
   - jemoji
-
-twitter: '@anirudh_ramanan'
 
 kramdown:
   # Enable GitHub Flavored Markdown (fenced code blocks)

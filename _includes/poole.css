@@ -35,7 +35,7 @@
  * Update the foundational and global aspects of the page.
  */
 
- * {
+* {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
@@ -360,6 +360,7 @@ tbody tr:nth-child(odd) th {
 .post-date {
   display: block;
   margin-top: -.5rem;
+  margin-bottom: 1rem;
   color: #9a9a9a;
 }
 

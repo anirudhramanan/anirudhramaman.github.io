@@ -30,7 +30,7 @@
  * Update the foundational and global aspects of the page.
  */
 
- html {
+html {
   font-family: "Karla", Roboto, Helvetica, Arial, sans-serif;
 }
 @media (min-width: 48em) {
@@ -59,20 +59,20 @@
 
 .sidebar {
   text-align: center;
-  padding: 1rem 1rem;
+  padding: 2rem 1rem;
   color: rgba(255,255,255,.5);
-  background: -webkit-linear-gradient(#37474f, #263238);
-  background: -o-linear-gradient(#37474f, #263238);
-  background: -moz-linear-gradient(#37474f, #263238);
-  background: linear-gradient(#37474f, #263238);
+  background: -webkit-linear-gradient(#000, #131313);
+  background: -o-linear-gradient(#000, #131313);
+  background: -moz-linear-gradient(#000, #131313);
+  background: linear-gradient(#000, #131313);
 }
 
 @media (min-width: 64em) {
   .sidebar {
     display: block;
-    position: relative;
-    width: 100%;
-    height: 20%;
+    position: fixed;
+    width: 25%;
+    height: 100%;
     display: table;
   }
 }
@@ -80,9 +80,9 @@
 @media (min-width: 80em) {
   .sidebar {
     display: block;
-    position: relative;
-    width: 100%;
-        height: 20%;
+    position: fixed;
+    width: 20rem;
+    height: 100%;
     display: table;
   }
 }
@@ -144,11 +144,23 @@ a.sidebar-nav-item:focus {
  */
 
 .content {
-  max-width: 70%;
+  max-width: 44rem;
   padding-top:    4rem;
   padding-bottom: 4rem;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (min-width: 64em) {
+  .container {
+    margin-left: 25%;
+  }
+}
+
+@media (min-width: 80em) {
+  .container {
+    margin-left: 20rem;
+  }
 }
 
 /*
@@ -322,7 +334,7 @@ a.sidebar-nav-item:focus {
 
 @media (min-width: 48em) {
   .post-title {
-    font-size: 2.6rem; }
+    font-size: 2.4rem; }
 }
 
 .post-overlay-header {
@@ -384,7 +396,3 @@ a.sidebar-nav-item:focus {
 .mail a:hover {
   color: #4DB6AC;
   border-color: #4DB6AC; }
-
-.img {
-    float: none;
-  }
