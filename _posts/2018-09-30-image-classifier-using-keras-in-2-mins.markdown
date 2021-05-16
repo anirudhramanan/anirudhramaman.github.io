@@ -32,7 +32,7 @@ Convoluational Neural Network (CNN) is a deep feed-forward neural network which 
 
 A simple CNN is a sequence of layers, and every layer in the CNN transform one volume of activation to another using a function. 
 
-![CNN](./cnn.png)
+![CNN](../content/images/2018/imageclassifierkeras/cnn.png)
 
 Description of each layer:
 
@@ -52,7 +52,7 @@ Since we now have a rough idea of CNN and it's working, let's start writing code
 
 Download the cats and dogs image dataset from [kaggle](https://www.kaggle.com/c/dogs-vs-cats/data). Before implementing the model, we will use the ImageDataGenerator class of keras to prepare the data.
 
-![Dataset](./dog.jpg)
+![Dataset](../content/images/2018/imageclassifierkeras/dog.jpg)
 
 ```python
 from keras.preprocessing.image import ImageDataGenerator, array_to_img, img_to_array, load_img

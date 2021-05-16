@@ -4,7 +4,7 @@ date: 2018-9-23
 tags: [machine learning]
 ---
 
-![Image](./main.jpeg)
+![Image](../content/images/2018/transferlearning/main.jpeg)
 
 Training a model from scratch requires large amount of training data and time in terms of computing power, even with a GPU. Why to train a model from scratch when there is a way to extract the lower level layers from an already pre-trained model, and reuse the same in the new model.
 
@@ -18,7 +18,7 @@ Transfer learning can:
 
 Training a model using transfer learning could take approximately 40 mins to 1 hr (depending on the training dataset) of the CPU time on a normal laptop, as compared to hours of GPU time if built from scratch.
 
-![Image Dataset](./dataset.png)
+![Image Dataset](../content/images/2018/transferlearning/dataset.png)
 
 In this tutorial we will use the pre-trained inception-v3 model to build the dog breed classifier which will be trained on the standford dog breed dataset (dataset contains images of 120 different breeds from around the world, total of 20580 images)
 
@@ -41,11 +41,11 @@ retrain script is used to retrain the model (inceptionv3 default model or mobile
 Some of the important parameters that can used to tweak the model:
 
 1. <b>-image_dir</b> : path of the labeled images. This is how the images directory will look like. The names of the folders are important here since these are used as the labels for each image inside them (The name of image file does not matter though)
-![training Dataset](./training_set.png)
+![training Dataset](../content/images/2018/transferlearning/training_set.png)
 
 2. <b>-output_graph</b>: path to save the output ie the trained graph. By default these gets saved to the tmp directory in the root folder
 
-3. <b>-intermediate_output_graphs_dir</b>: path to save the intermediate graphs.
+   3. <b>-intermediate_output_graphs_dir</b>: path to save the intermediate graphs.
 
 4. <b>-intermediate_store_frequency</b>: number of steps to store intermediate graph.
 
@@ -107,15 +107,15 @@ python retrain.py --image_dir Images
 
 ```
 
-![Bottleneck](./bottleneck.png)
+![Bottleneck](../content/images/2018/transferlearning/bottleneck.png)
 
 Once completed (which might take approximately 40–45 mins depending on the device being used for training), the retrained model will be saved to the directory provided (defaults to \tmp). This one step generates a trained model which can be used to classify images (dog breed in our case)
 
-![Validation](./validation.png)
+![Validation](../content/images/2018/transferlearning/validation.png)
 
 This model has a validation accuracy of 91% which is a very good accuracy rate for a model that has been trained in a limited time with limited amount of training set. We can now use the trained model to predict the breed for any given dog.
 
-![DogBreed](./dog_breed.jpeg)
+![DogBreed](../content/images/2018/transferlearning/dog_breed.jpeg)
 
 Do you know which breed the dog is ? No ? Shall we ask the model then ?
 
@@ -131,7 +131,7 @@ python label_image.py \
 --image=dog.jpg
 ```
 
-![Predicted value](./predicted.png)
+![Predicted value](../content/images/2018/transferlearning/predicted.png)
 
 Wohooo!! You have built a dog breed classifier in no time :)
 
