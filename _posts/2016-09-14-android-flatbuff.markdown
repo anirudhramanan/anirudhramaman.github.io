@@ -57,7 +57,7 @@ Here are some metrics which I measuread using both :
 
 With gson, it took around 30 - 40 ms to parse the entire json file, whereas with flatbuffers it took 3 - 4 ms for the same. Reason being the data is stored in byte buffer format in the flatbuffer file, so there is no need for parsing or unpacking the file, thus resulting in lesser time accessing the data.
 
-![Comparison](./comparison.png)
+![Comparison](../content/images/2016/flatbuff/comparison.png)
 
 * <b>Memory Allocation</b>
 
