@@ -1,8 +1,9 @@
 ---
-layout: post
 title: Why Flatbuffers ? 
-date: '2016-08-14'
+date: 2016-09-14
+tags: [android, flatbuffers]
 ---
+
 [![Serialization Performance](https://img.youtube.com/vi/IwxIIUypnTE/0.jpg)](https://www.youtube.com/watch?v=IwxIIUypnTE)
 
 Why Flatbuffers? Why not use some standard libraries such as GSON, or jackson. Is there any benefit of using flatbuffers over other libraries. This post answers it all.
@@ -56,7 +57,7 @@ Here are some metrics which I measuread using both :
 
 With gson, it took around 30 - 40 ms to parse the entire json file, whereas with flatbuffers it took 3 - 4 ms for the same. Reason being the data is stored in byte buffer format in the flatbuffer file, so there is no need for parsing or unpacking the file, thus resulting in lesser time accessing the data.
 
-![Comparison](/content/images/2016/flatbuff/comparison.png)
+![Comparison](./comparison.png)
 
 * <b>Memory Allocation</b>
 

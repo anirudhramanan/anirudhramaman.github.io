@@ -1,11 +1,10 @@
 ---
-layout: post
 title: What can you cook faster, instant noodles or a model using keras ?
-date: '2018-09-30'
-cover_image: '/content/images/2018/imageclassifierkeras/promo.jpg'
+date: 2018-09-30
+tags: [machine learning, keras]
 ---
 
-Hi everyone, this is my second post on Machine Learning. We will try to build an image classifier model from scratch using keras under 2 mins (yes, let's see if we can build a model before your noddles is ready :P)
+We will try to build an image classifier model from scratch using keras under 2 mins (yes, let's see if we can build a model before your noddles is ready :P)
 
 Instead of digging into the code straight away, let's understand what keras is and how it can be useful.
 
@@ -33,19 +32,15 @@ Convoluational Neural Network (CNN) is a deep feed-forward neural network which 
 
 A simple CNN is a sequence of layers, and every layer in the CNN transform one volume of activation to another using a function. 
 
-![CNN](/content/images/2018/imageclassifierkeras/cnn.png)
+![CNN](./cnn.png)
 
 Description of each layer:
 
-* Input Layer: This layer is used to pass the raw pixel information of the image. Typically the raw pixel information looks like this [128 x 128 x 3] where 128 x 128 is the width and height of the image and 3 is the color channel (RGB)
-
-* Convoluation Layer: This layer is used to calculate the outputs of neurons in that layer/region.
-
-* RELU Layer: This is used to apply the activation functions to the output of previous layer.
-
-* Pooling Layer: Pooling Layer performs downsampling and reducing the dimensionality of the given input image.
-
-* Fully Connected Layer: This is used to compute the final class label for a given image. 
+1. Input Layer: This layer is used to pass the raw pixel information of the image. Typically the raw pixel information looks like this [128 x 128 x 3] where 128 x 128 is the width and height of the image and 3 is the color channel (RGB)
+2. Convoluation Layer: This layer is used to calculate the outputs of neurons in that layer/region.
+3. RELU Layer: This is used to apply the activation functions to the output of previous layer.
+4. Pooling Layer: Pooling Layer performs downsampling and reducing the dimensionality of the given input image.
+5. Fully Connected Layer: This is used to compute the final class label for a given image. 
 
 Want to read CNN in detail? [Read here](http://cs231n.github.io/convolutional-networks/)
 
@@ -57,7 +52,7 @@ Since we now have a rough idea of CNN and it's working, let's start writing code
 
 Download the cats and dogs image dataset from [kaggle](https://www.kaggle.com/c/dogs-vs-cats/data). Before implementing the model, we will use the ImageDataGenerator class of keras to prepare the data.
 
-![Dataset](/content/images/2018/imageclassifierkeras/dog.jpg)
+![Dataset](./dog.jpg)
 
 ```python
 from keras.preprocessing.image import ImageDataGenerator, array_to_img, img_to_array, load_img

@@ -1,9 +1,10 @@
 ---
-layout: post
 title: Choosing the right Scheduler API
-date: '2016-10-15'
-cover_image: '/content/images/2016/schedule.jpg'
+date: 2016-10-15
+tags: [android]
+image: "./strictmode.jpg"
 ---
+
 Most of the apps uses schedulers to schedule task that are executed outside of the life cycle i.e even when the app isn't running. Tasks such as checking the server for updates, pushing analytics events etc. There are several API's for scheduling tasks, but not all fits the every use-case. 
 
 Lets go through all the API's and decide the best one for each use case.
@@ -127,5 +128,3 @@ This uses the Google Play Services to help schedule and batch jobs across the sy
 GcmNetworkManager, and JobScheduler fits the use case when the job has to be repeated or one-off, while keeping battery life in mind. If some kind of precision is required in the timing, AlarmManager should be used. 
 
 Eg : An alarm app should use AlarmManager, instead of GcmNetworkManager, or JobScheduler.
-
-For any queries, please email me at anirudhramanan23@gmail.com. Thank you.
