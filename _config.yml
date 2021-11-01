@@ -8,7 +8,7 @@ mode: dark # default theme "dark" | "light"
 # Profile settings
 author:
   name: Anirudh Ramanan # author name
-  bio: Software Engineer at NextLeap, previously at Flipkart. This is my personal space and any views expressed here are mine, and solely mine.
+  bio: Software Engineer <a href="https://nextleap.app">@nextleap</a>. This is my personal space and any views expressed here are mine, and solely mine.
   connect: >-
     fork<b><a href="https://github.com/anirudhramanan">@Github</a></b>
     network<b><a href="https://www.linkedin.com/in/anirudhramanan">@LinkedIn</a></b>
