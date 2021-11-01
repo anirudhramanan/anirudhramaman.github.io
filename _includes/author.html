@@ -6,5 +6,9 @@
   />
   <h2 class="author-name">{{ site.author.name }}</h2>
   <p class="author-bio">{{ site.author.bio }}</p>
-  <p class="author-connect">{{ site.author.connect }}</p>
+  <div class="author-connect-parent">
+    <div>{{ site.author.connect.github }}</div>
+    <div>{{ site.author.connect.linkedin }}</div>
+    <div>{{ site.author.connect.twitter }}</div>
+  </div>
 </div>
