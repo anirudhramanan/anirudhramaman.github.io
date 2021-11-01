@@ -8,11 +8,11 @@ mode: dark # default theme "dark" | "light"
 # Profile settings
 author:
   name: Anirudh Ramanan # author name
-  bio: Software Engineer <a href="https://nextleap.app">@nextleap</a></b>. This is my personal space and any views expressed here are mine, and solely mine.
+  bio: Software Engineer <b><a href="https://nextleap.app">@nextleap</a></b>. This is my personal space and any views expressed here are mine, and solely mine.
   connect: >-
-    fork<b><a href="https://github.com/anirudhramanan">@Github  </a></b>
-    network<b><a href="https://www.linkedin.com/in/anirudhramanan">@LinkedIn  </a></b>
-    mention<b><a href="https://twitter.com/imanirudhr">@Twitter  </a></b>
+     fork<b><a href="https://github.com/anirudhramanan">@Github</a></b>
+     network<b><a href="https://www.linkedin.com/in/anirudhramanan">@LinkedIn</a></b>
+     mention<b><a href="https://twitter.com/imanirudhr">@Twitter</a></b>
   github: anirudhramanan # github username
   twitter: imanirudhr # twitter username
   email: anirudhramanan23@gmail.com # email adress
