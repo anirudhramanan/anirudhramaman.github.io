@@ -59,5 +59,6 @@ include:
 # Plugins
 plugins:
   - jekyll-sitemap
+  - jekyll-seo-tag
 
 github: [metadata]
